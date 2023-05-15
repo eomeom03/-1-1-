@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>학점 계산</title>
+</head>
+<body>
+<h3>HUFS 학점 계산 프로그램</h3>
+<hr>
+<script>
+    let grade;
+    let name = prompt("이름을 입력하세요");
+    let score = prompt(name + "님 점수를 입력하세요");
+    if (score >= 90)
+        grade = "A";
+    else if (score >= 80)
+        grade = "B";
+    else if (score >= 70)
+        grade = "C";
+    else if (score >= 60)
+        grade = "D";
+    else
+        grade = "F"
+    document.write(name + "님의 학점은" + grade + "입니다.<br>")
+</script>
+</body>
+</html>
